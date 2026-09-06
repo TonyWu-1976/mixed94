@@ -1,0 +1,18 @@
+An acm codec is a kind of program that works almost like a DLL. That means that it                            has functions that can be called from other programs but it can not be run separately.
+Fraunhofer has made such a codec for MP3 creation and it is a lot faster then the
+L3enc program. The codec comes in two versions, the advanced and the professional.
+The advanced version is shipped with Microsofts Netshow which is free but
+unfortunately it supports only low bitrates for encoding. It does however support
+higher bitrates for decoding.
+
+The professional version is better and supports bitrates up to 128 Kbit for encoding.
+This one has to be purchased and is quite expensive however... Contact Fraunhofer
+directly for information.
+
+The filename of the codecs are l3codeca.acm and l3codecp.acm. They should be
+placed in the c:\windows\system directory. The file c:\windows\system.ini must also be
+updated in the section [drivers32] with this:
+
+[drivers32]
+msacm.l3codec=l3codecp.acm        ;for the professional one.
+msacm.l3acm=l3codeca.acm          ;for the advanced one.

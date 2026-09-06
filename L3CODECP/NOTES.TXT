@@ -1,0 +1,9 @@
+將它解到 C:\Windows\System 下,然後在 System.ini 中的 [drivers32] 加入下面這一行
+
+             MSACM.l3codec=l3codecp.acm
+
+==================================
+Jackbin
+E-mail : jackbin@m2.dj.net.tw
+叮噹屋 : http://w2.dj.net.tw/~bin/
+==================================
